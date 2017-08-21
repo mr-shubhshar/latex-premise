@@ -1,0 +1,49 @@
+\documentclass{article}
+
+\author{Shubham Sharma}
+
+\title{Intro to Lists, Refs and Labels in {\LaTeX}}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+In section \ref{lists}, there are 2 lists: 1 ordered and 1 unordered each containing 1 unordered and 1 ordered sublist, respectively.
+
+The section \ref{lnr} is about Labels and References.
+
+\section{Lists\label{lists}}
+
+Below is an ordered list:
+
+\begin{enumerate}
+    \item{Bananas}
+    \item{Papaya}
+    \item{Bread}
+    \begin{itemize}
+        \item{White bread}
+        \item{Brown bread}
+    \end{itemize}
+    \item{Chawal}
+\end{enumerate}
+
+Below is an unordered list:
+
+\begin{itemize}
+    \item Tee
+    \item Socks
+    \begin{enumerate}
+        \item size L
+        \item size M
+    \end{enumerate}
+    \item Gloves
+\end{itemize}
+
+\section{Labels and Refs\label{lnr}}
+
+While editing a document, say you have to change the order of sections or lists or anything that might affect their indexes, if you hard-code the indexes, that might be troublesome since you might have to re-type all those indexes again.
+
+The solution to this is Labels and References. {\LaTeX} will automatically perform these tasks for you if you've labelled every section and/or list items.
+
+\end{document}
